@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+console.log(Astro.response);
+
+Astro.response.headers.set('X-SSR-render', true);
+---
+
+<Layout title="404">
+  <main>
+    <h1 class="text-center font-bold">Page Not found</h1>
+    <p class="text-center">We can’t find what you are looking for </p>
+  </main>
+</Layout>
